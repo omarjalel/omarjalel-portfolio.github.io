@@ -49,17 +49,7 @@ body.dark a {
     margin-left: 20px;
 }
 
-nav {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background: #0f2027;
-    color: #fff;
-    display: flex;
-    justify-content: space-between;
-    padding: 15px 40px;
-    z-index: 1000;
-}
+
 
 nav ul {
     list-style: none;
@@ -70,22 +60,14 @@ nav ul li {
     margin-left: 20px;
 }
 
-nav a {
-    color: #fff;
-    text-decoration: none;
+nav {
+  background-color: var(--nav-bg);
 }
 
-.hero {
-    height: 100vh;
-    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 0 20px;
+nav a {
+  color: var(--nav-link);
 }
+
 
 .hero h1 {
     font-size: 2.5rem;
@@ -97,20 +79,14 @@ nav a {
 }
 
 .btn {
-    background: #00c6ff;
-    color: #000;
-    padding: 12px 20px;
-    margin: 10px;
-    text-decoration: none;
-    border-radius: 6px;
-    font-weight: bold;
-    display: inline-block;
+  background-color: var(--btn-bg);
+  color: var(--btn-color);
 }
 
 .btn.outline {
-    background: transparent;
-    border: 2px solid #00c6ff;
-    color: #fff;
+  background: transparent;
+  border: 2px solid var(--btn-outline-color);
+  color: var(--btn-outline-color);
 }
 
 section {
@@ -119,16 +95,19 @@ section {
     margin: auto;
 }
 
-h2 {
-    margin-bottom: 20px;
-    color: #2c5364;
+section h2 {
+  color: var(--section-h2);
+}
+
+.hero {
+  background: var(--hero-bg);
+  color: var(--text-color);
 }
 
 .card {
-    background: #f4f4f4;
-    padding: 25px;
-    margin-bottom: 25px;
-    border-left: 5px solid #2c5364;
+  background-color: var(--card-bg);
+  border-left: 5px solid var(--card-border);
+  color: var(--text-color);
 }
 
 .card span {
@@ -145,7 +124,37 @@ h2 {
 }
 
 footer {
-    text-align: center;
-    padding: 20px;
-    background: #eee;
+  background-color: var(--footer-bg);
+  color: var(--footer-color);
 }
+a {
+  color: var(--link-color);
+}
+
+:root {
+    --bg-color: #fff;
+  --text-color: #222;
+  --nav-bg: #0f2027;
+  --nav-link: #fff;
+  --card-bg: #f4f4f4;
+  --card-border: #2c5364;
+  --btn-bg: #00c6ff;
+  --btn-color: #000;
+  --btn-outline-color: #00c6ff;
+  --section-h2: #2c5364;
+  --footer-bg: #eee;
+  --footer-color: #000;
+  --link-color: #00c6ff;
+  --hero-bg: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+body.dark {
+  --bg-color: #121212;
+  --text-color: #f5f5f5;
+}
+
