@@ -1,53 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Your Name | Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
 
-  <nav>
-    <h2>Your Name</h2>
-    <div class="nav-links">
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#skills">Skills</a>
+  <header class="header">
+    <div class="container">
+      <h1>Your Name</h1>
+      <p class="subtitle">Student Developer · Problem Solver</p>
+      <div class="buttons">
+        <a href="#projects" class="btn primary">View Projects</a>
+        <a href="#contact" class="btn outline">Contact</a>
+      </div>
     </div>
-  </nav>
+  </header>
 
-  <section class="hero">
-    <h1>Hi, I'm Your Name</h1>
-    <p>I build things and learn fast.</p>
-  </section>
+  <main class="container">
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>
-      I'm a student interested in technology and problem solving.
-      This portfolio highlights my work and progress.
-    </p>
-  </section>
+    <section class="about">
+      <h2>About Me</h2>
+      <p>
+        I’m a student developer interested in building clean, functional,
+        and user-friendly websites. I enjoy learning new technologies
+        and improving my skills through projects.
+      </p>
+    </section>
 
-  <section id="projects" class="cards">
-    <h2>Projects</h2>
-    <div class="card">
-      <h3>Project One</h3>
-      <p>Short description of what you built.</p>
-    </div>
-    <div class="card">
-      <h3>Project Two</h3>
-      <p>Short description of what you built.</p>
-    </div>
-  </section>
+    <section id="projects">
+      <h2>Projects</h2>
 
-  <section id="skills">
-    <h2>Skills</h2>
-    <p>HTML • CSS • JavaScript</p>
-  </section>
+      <div class="project-grid">
+        <div class="project-card">
+          <h3>Project One</h3>
+          <p>A web project built using HTML, CSS, and JavaScript.</p>
+          <a href="#" target="_blank">View Project →</a>
+        </div>
+
+        <div class="project-card">
+          <h3>Project Two</h3>
+          <p>An interactive app focusing on usability and performance.</p>
+          <a href="#" target="_blank">View Project →</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="skills">
+      <h2>Skills</h2>
+      <ul class="skill-list">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Git & GitHub</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>
+        You can reach me at:
+        <br />
+        <strong>yourprofessionalemail@example.com</strong>
+      </p>
+    </section>
+
+  </main>
 
   <footer>
-    <p>© 2025 Your Name</p>
+    © 2025 Your Name
   </footer>
 
 </body>
