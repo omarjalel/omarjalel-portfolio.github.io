@@ -379,7 +379,7 @@ body.dark #contact i {
     max-width: 250px;     /* optional: limits size on large screens */
     height: auto;         /* keeps aspect ratio */
     object-fit: contain;  /* ensures the whole image fits without cropping */
-    border-radius: 50%;   /* makes it circular, optional */
+    border-radius: 75%;   /* makes it circular, optional */
     display: block;
     margin: 0 auto 20px;  /* centers and adds spacing below */
 }
