@@ -157,3 +157,12 @@ body.dark {
   --bg-color: #121212;
   --text-color: #f5f5f5;
 }
+/* Make buttons readable in dark mode */
+body.dark .btn {
+    color: #fff; /* white text for better contrast */
+}
+
+/* Optional: outline buttons in dark mode */
+body.dark .btn.outline {
+    color: #00c6ff; /* same as border for visibility */
+}
