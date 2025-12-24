@@ -37,8 +37,9 @@ toggleBtn.addEventListener("click", () => {
 // =====================
 var typed = new Typed('#typed', {
   strings: ["Industrial Automation & IIoT Engineer"],
-  typeSpeed: 50,
-  backSpeed: 25,
+  typeSpeed: 50,       // speed of typing
+  backSpeed: 25,       // speed of backspace
+  startDelay: 1000,    // delay in ms before typing starts (1 second)
   loop: true
 });
 
