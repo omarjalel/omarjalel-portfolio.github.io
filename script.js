@@ -37,28 +37,26 @@ toggleBtn.addEventListener("click", () => {
 // =====================
 var typed = new Typed('#typed', {
   strings: ["Industrial Automation - IIoT Engineer"],
-  typeSpeed: 50,       // speed of typing
-  backSpeed: 25,       // speed of backspace
-  startDelay: 1500,    // delay in ms before typing starts (1.5 second)
-  backDelay: 3000,              // Delay before backspacing (ms)
-   loop: true,   // type once and stay
-  showCursor: true  // optional: hide blinking cursor
-  
+  typeSpeed: 50,
+  backSpeed: 25,
+  startDelay: 1500,
+  backDelay: 3000,
+  loop: true,
+  showCursor: true,
+  fadeOut: true
 });
 
 // =====================
 // Particles.js background
 // =====================
-particlesJS('particles-js',
-  {
-    "particles": {
-      "number": { "value": 80 },
-      "size": { "value": 3 },
-      "move": { "speed": 1 },
-      "line_linked": { "enable": true }
-    }
+particlesJS('particles-js', {
+  "particles": {
+    "number": { "value": 80 },
+    "size": { "value": 3 },
+    "move": { "speed": 1 },
+    "line_linked": { "enable": true }
   }
-);
+});
 
 // =====================
 // Animate skill bars when section visible
@@ -68,8 +66,7 @@ const skillsSection = document.getElementById('skills');
 
 function fillSkills() {
   skills.forEach(skill => {
-    const width = skill.style.width;
-    skill.style.width = width;
+    skill.style.width = skill.getAttribute('data-width');
   });
 }
 
