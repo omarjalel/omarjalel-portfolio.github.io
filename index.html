@@ -7,12 +7,10 @@
 
   <!-- AOS Animation Library -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <!-- Custom CSS -->
   <link rel="stylesheet" href="style.css" />
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  
 </head>
 <body>
 
@@ -20,10 +18,11 @@
   <div class="logo">Omar Jalel</div>
   <ul>
     <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
     <li><a href="#experience">Experience</a></li>
     <li><a href="#projects">Projects</a></li>
     <li><a href="#education">Education</a></li>
-    <li><a href="#skills">Skills</a></li>
+    <li><a href="#languages">Languages</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
   <button id="theme-toggle" class="theme-toggle">🌙</button>
@@ -50,8 +49,44 @@
   </p>
 </section>
 
-<section id="experience">
-  <h2 data-aos="fade-up">Experience</h2>
+<section id="skills" data-aos="fade-up">
+  <h2>Skills</h2>
+  <div class="grid">
+    <div>
+      <h4>Industrial Automation</h4>
+      <div class="skill-bar"><div class="skill-fill" data-width="90%"></div></div>
+      <p>Electrical Wiring Connection, Siemens S7-300/1200/1500, Safety, Servo Drives, VFDs, TIA Portal, WinCC, S7 PLCSIM, Beckhoff TwinCAT 3</p>
+    </div>
+    <div>
+      <h4>IIoT & Communication</h4>
+      <div class="skill-bar"><div class="skill-fill" data-width="85%"></div></div>
+      <p>OPC UA, Modbus TCP/RTU, PROFINET IO, MQTT, Apache Kafka (Streams/Connect), MES Integration</p>
+    </div>
+    <div>
+      <h4>DevOps & Software</h4>
+      <div class="skill-bar"><div class="skill-fill" data-width="75%"></div></div>
+      <p>Docker, Linux, Git, Node-RED, SQL, PostgreSQL, MySQL, Portal Azure, Cloud - Azure</p>
+    </div>
+    <div>
+      <h4>Tools & Embedded</h4>
+      <div class="skill-bar"><div class="skill-fill" data-width="60%"></div></div>
+      <p>Factory I/O, LabVIEW, MATLAB, Simulik, Fluidsim, PROTEUS, Raspberry Pi, Arduino, STM32 CubeMX</p>
+    </div>
+    <div>
+      <h4>Coding & Automation Languages</h4>
+      <div class="skill-bar"><div class="skill-fill" data-width="70%"></div></div>
+      <p>LADDER, SCL, STL, GRAPH, HTML, PHP, JAVA, C++</p>
+    </div>
+    <div>
+      <h4>Microsoft Pack</h4>
+      <div class="skill-bar"><div class="skill-fill" data-width="90%"></div></div>
+      <p>Microsoft Office, Excel, Word, PowerPoint</p>
+    </div>
+  </div>
+</section>
+
+<section id="experience" data-aos="fade-up">
+  <h2>Experience</h2>
 
   <div class="card" data-aos="fade-up" data-aos-delay="100">
     <h3>Methode Electronics – Malta</h3>
@@ -74,19 +109,16 @@
     <ul>
       <li>Study and demonstrate IIOT tools and technologies on behalf of several industrial clients</li>
       <li>Participate in the study of new technologies and documentation within the R&D department</li>
-      <li>Participate in the tasks of demos, studies, implementations for the implementation of an MES (part integration
-with machines and control units)</li>
-      <li>Identify IIOT communication points before the integration phase of an MES: Technical feasibility, choice of
-equipment, budget estimate, etc</li>
-      <li>Develop a communication gateway to monitor and collect machine variables in real time via several industrial
-protocols</li>
-      <li> Improve the gateway to be able to archive collected data and operate in multi-node mode</li>
+      <li>Participate in the tasks of demos, studies, implementations for the implementation of an MES (part integration with machines and control units)</li>
+      <li>Identify IIOT communication points before the integration phase of an MES: Technical feasibility, choice of equipment, budget estimate, etc</li>
+      <li>Develop a communication gateway to monitor and collect machine variables in real time via several industrial protocols</li>
+      <li>Improve the gateway to be able to archive collected data and operate in multi-node mode</li>
     </ul>
   </div>
 
-    <div class="card" data-aos="fade-up" data-aos-delay="200">
+  <div class="card" data-aos="fade-up" data-aos-delay="200">
     <h3>APBS Avicenna Private Business Schools – Tunisia</h3>
-    <span>IT and Maintenance support  (2021 – 2022)</span>
+    <span>IT and Maintenance support (2021 – 2022)</span>
     <ul>
       <li>Maintain and adjust computer and electronic equipment</li>
       <li>Monitor online sessions and conferences</li>
@@ -96,92 +128,86 @@ protocols</li>
   </div>
 </section>
 
-<section id="projects">
-  <h2 data-aos="fade-up">Projects</h2>
+<section id="projects" data-aos="fade-up">
+  <h2>Projects</h2>
 
   <div class="card" data-aos="fade-up" data-aos-delay="300">
     <h3>BMW Automotive Production Line</h3>
-    <p>
-      Programming and commissioning of simple machines and turntables
-      using Siemens S7-1500 PLCs and WinCC HMI.
-    </p>
+    <p>Programming and commissioning of simple machines and turntables using Siemens S7-1500 PLCs and WinCC HMI.</p>
     <span>Siemens S7-1500 · TIA Portal · WinCC · PROFINET</span>
   </div>
 
   <div class="card" data-aos="fade-up" data-aos-delay="200">
     <h3>Vision Inspection System (Robot + PLC)</h3>
-    <p>
-      Development of a vision-based inspection system using a Matrox camera
-      and a 6-axis JAKA robot controlled via Siemens PLC.
-    </p>
+    <p>Development of a vision-based inspection system using a Matrox camera and a 6-axis JAKA robot controlled via Siemens PLC.</p>
     <span>Vision Systems · Robotics · Siemens PLC · PROFINET</span>
   </div>
 
   <div class="card" data-aos="fade-up" data-aos-delay="300">
     <h3>IIoT Industrial Gateway</h3>
-    <p>
-      Real-time machine data acquisition gateway designed for MES integration,
-      supporting multi-node operation and data archiving.
-    </p>
+    <p>Real-time machine data acquisition gateway designed for MES integration, supporting multi-node operation and data archiving.</p>
     <span>OPC UA · Modbus TCP · MQTT · Apache Kafka (Streams/Connect) · Docker</span>
   </div>
 </section>
 
-<!-- =========================
-     EDUCATION SECTION
-========================= -->
 <section id="education" data-aos="fade-up">
   <h2>Education</h2>
 
   <div class="card" data-aos="fade-up" data-aos-delay="100">
     <h3>Professional Master's in Industrial Systems Control</h3>
-    <span>University of Carthage - ISSAT Mateur [15 Sep 2019 – 15 Jun 2021]</span>
-    <p>City: Bizerte | Country: Tunisia</p>
-    <p>Website: <a href="https://ucar.rnu.tn/" target="_blank">ucar.rnu.tn</a> | Level in EQF: EQF level 7</p>
+    <span>University of Carthage - ISSAT Mateur [ 15 Sep 2019 – 15 Jun 2021 ]</span>
+    <p>City: Bizerte | Country: Tunisia | Website: <a href="https://ucar.rnu.tn/" target="_blank">ucar.rnu.tn</a> | Level in EQF: EQF level 7</p>
   </div>
 
   <div class="card" data-aos="fade-up" data-aos-delay="200">
     <h3>Applied Degree in Automation of Industrial Systems (Bachelor's Degree)</h3>
-    <span>University of Carthage - ISSAT Mateur [15 Sep 2016 – 15 Jun 2019]</span>
-    <p>City: Bizerte | Country: Tunisia</p>
-    <p>Website: <a href="https://ucar.rnu.tn/" target="_blank">ucar.rnu.tn</a> | Level in EQF: EQF level 6</p>
+    <span>University of Carthage - ISSAT Mateur [ 15 Sep 2016 – 15 Jun 2019 ]</span>
+    <p>City: Bizerte | Country: Tunisia | Website: <a href="https://ucar.rnu.tn/" target="_blank">ucar.rnu.tn</a> | Level in EQF: EQF level 6</p>
   </div>
 </section>
 
-<section id="skills" data-aos="fade-up">
-  <h2>Skills</h2>
-  <div class="grid">
-    <div>
-      <h4>Industrial Automation</h4>
-      <div class="skill-bar"><div class="skill-fill" style="width: 90%"></div></div>
-      <p>Electrical Wiring Connection, Siemens S7-300/1200/1500, Safety, Servo Drives, VFDs, TIA Portal, WinCC, S7 PLCSIM, Beckhoff TwinCAT 3</p>
-    </div>
-    <div>
-      <h4>IIoT & Communication</h4>
-      <div class="skill-bar"><div class="skill-fill" style="width: 85%"></div></div>
-      <p>OPC UA, Modbus TCP/RTU, PROFINET IO, MQTT, Apache Kafka (Streams/Connect), MES Integration</p>
-    </div>
-    <div>
-      <h4>DevOps & Software</h4>
-      <div class="skill-bar"><div class="skill-fill" style="width: 75%"></div></div>
-      <p>Docker, Linux, Git, Node-RED, SQL, PostgreSQL, MySQL, Portal Azure, Cloud - Azure</p>
-    </div>
-    <div>
-      <h4>Tools & Embedded</h4>
-      <div class="skill-bar"><div class="skill-fill" style="width: 60%"></div></div>
-      <p>Factory I/O, LabVIEW, MATLAB, Simulik, Fluidsim, PROTEUS, Raspberry Pi, Arduino, STM32 CubeMX</p>
-    </div>
-    <div>
-      <h4>Coding & Automation Languages</h4>
-      <div class="skill-bar"><div class="skill-fill" style="width: 70%"></div></div>
-      <p>LADDER, SCL, STL, GRAPH, HTML, PHP, JAVA, C++</p>
-    </div>
-    <div>
-      <h4>Microsoft Pack</h4>
-      <div class="skill-bar"><div class="skill-fill" style="width: 90%"></div></div>
-      <p>Microsoft Office, Excel, Word, PowerPoint</p>
-    </div>
+<section id="languages" data-aos="fade-up">
+  <h2>Languages</h2>
+
+  <div class="language-card">
+    <h4>Mother Tongue</h4>
+    <p>Arabic</p>
   </div>
+
+  <div class="language-card">
+    <h4>English</h4>
+    <ul>
+      <li>Listening: C1</li>
+      <li>Reading: B2</li>
+      <li>Writing: B1</li>
+      <li>Spoken Production: B1</li>
+      <li>Spoken Interaction: B2</li>
+    </ul>
+  </div>
+
+  <div class="language-card">
+    <h4>German</h4>
+    <ul>
+      <li>Listening: A1</li>
+      <li>Reading: A1</li>
+      <li>Writing: A2</li>
+      <li>Spoken Production: A1</li>
+      <li>Spoken Interaction: A2</li>
+    </ul>
+  </div>
+
+  <div class="language-card">
+    <h4>French</h4>
+    <ul>
+      <li>Listening: B2</li>
+      <li>Reading: C1</li>
+      <li>Writing: C1</li>
+      <li>Spoken Production: B2</li>
+      <li>Spoken Interaction: B2</li>
+    </ul>
+  </div>
+
+  <p><strong>Levels:</strong> A1 and A2: Basic user; B1 and B2: Independent user; C1 and C2: Proficient user</p>
 </section>
 
 <section id="contact" data-aos="fade-up">
