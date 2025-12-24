@@ -41,7 +41,7 @@ var typed = new Typed('#typed', {
   backSpeed: 25,       // speed of backspace
   startDelay: 1500,    // delay in ms before typing starts (1.5 second)
   backDelay: 3000,              // Delay before backspacing (ms)
-   loop: false,   // type once and stay
+   loop: true,   // type once and stay
   showCursor: true  // optional: hide blinking cursor
   //fadeOut: false,              // Fade out instead of backspacing
 });
