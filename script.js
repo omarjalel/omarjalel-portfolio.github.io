@@ -40,7 +40,8 @@ var typed = new Typed('#typed', {
   typeSpeed: 50,       // speed of typing
   backSpeed: 25,       // speed of backspace
   startDelay: 1500,    // delay in ms before typing starts (1 second)
-  loop: true
+   loop: false,   // type once and stay
+  showCursor: false  // optional: hide blinking cursor
 });
 
 // =====================
