@@ -43,7 +43,7 @@ var typed = new Typed('#typed', {
   backDelay: 3000,              // Delay before backspacing (ms)
    loop: true,   // type once and stay
   showCursor: true  // optional: hide blinking cursor
-  //fadeOut: false,              // Fade out instead of backspacing
+  fadeOut: true,              // Fade out instead of backspacing
 });
 
 // =====================
