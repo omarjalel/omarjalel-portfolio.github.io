@@ -36,12 +36,12 @@ toggleBtn.addEventListener("click", () => {
 // Typed.js for hero
 // =====================
 var typed = new Typed('#typed', {
-  strings: ["Industrial Automation ddd & IIoT Engineer"],
+  strings: ["Industrial Automation - IIoT Engineer"],
   typeSpeed: 50,       // speed of typing
   backSpeed: 25,       // speed of backspace
-  startDelay: 1500,    // delay in ms before typing starts (1 second)
-   loop: false,   // type once and stay
-  showCursor: false  // optional: hide blinking cursor
+  startDelay: 3000,    // delay in ms before typing starts (1 second)
+   loop: true,   // type once and stay
+  showCursor: true  // optional: hide blinking cursor
 });
 
 // =====================
