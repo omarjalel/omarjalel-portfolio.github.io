@@ -1,4 +1,4 @@
-// ===== Smooth Scroll for Anchor Links =====
+// Smooth scroll
 document.querySelectorAll('a[href^="#"]').forEach(link => {
   link.addEventListener('click', e => {
     e.preventDefault();
@@ -9,24 +9,21 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
   });
 });
 
-// ===== Scroll Reveal Animation =====
-const observer = new IntersectionObserver(
-  entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('show');
-      }
-    });
-  },
-  { threshold: 0.1 }
-);
+// Scroll reveal
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+    }
+  });
+}, { threshold: 0.1 });
 
 document.querySelectorAll('section').forEach(section => {
   section.classList.add('hidden');
   observer.observe(section);
 });
 
-// ===== Dark Mode Toggle =====
+// Dark mode toggle
 const toggle = document.createElement('button');
 toggle.textContent = '🌙';
 toggle.className = 'dark-toggle';
@@ -36,7 +33,7 @@ toggle.addEventListener('click', () => {
   document.body.classList.toggle('dark');
 });
 
-// ===== Scroll To Top Button =====
+// Scroll to top
 const topBtn = document.createElement('button');
 topBtn.textContent = '↑';
 topBtn.className = 'top-btn';
