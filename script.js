@@ -39,9 +39,11 @@ var typed = new Typed('#typed', {
   strings: ["Industrial Automation - IIoT Engineer"],
   typeSpeed: 50,       // speed of typing
   backSpeed: 25,       // speed of backspace
-  startDelay: 3000,    // delay in ms before typing starts (1 second)
-   loop: true,   // type once and stay
+  startDelay: 1500,    // delay in ms before typing starts (1.5 second)
+  backDelay: 3000,              // Delay before backspacing (ms)
+   loop: false,   // type once and stay
   showCursor: true  // optional: hide blinking cursor
+  //fadeOut: false,              // Fade out instead of backspacing
 });
 
 // =====================
