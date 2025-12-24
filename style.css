@@ -219,6 +219,20 @@ section h2 {
 }
 
 /* =========================
+   LANGUAGES
+========================= */
+.language-card {
+    background-color: var(--card-bg);
+    border-left: 5px solid var(--card-border);
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+.language-card ul {
+    margin-top: 5px;
+}
+
+/* =========================
    FOOTER
 ========================= */
 footer {
@@ -247,13 +261,13 @@ a {
 
 #contact i {
     margin-right: 10px;
-    color: var(--btn-bg); /* icon color matches buttons */
+    color: var(--btn-bg);
     font-size: 1.3rem;
-    min-width: 25px; /* keeps alignment */
+    min-width: 25px;
 }
 
 body.dark #contact i {
-    color: var(--btn-color); /* adjusts icon color in dark mode */
+    color: var(--btn-color);
 }
 
 #contact a {
@@ -266,9 +280,6 @@ body.dark #contact i {
     color: var(--btn-bg);
 }
 
-/* =========================
-   CONTACT ICONS - MOBILE ENHANCEMENT
-========================= */
 @media (max-width: 600px) {
     #contact p {
         font-size: 1.2rem;
@@ -279,5 +290,3 @@ body.dark #contact i {
         min-width: 30px;
     }
 }
-
-
