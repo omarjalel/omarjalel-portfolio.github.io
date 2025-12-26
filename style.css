@@ -432,3 +432,85 @@ body.dark #contact i {
     border-radius: 6px;
     font-weight: bold;
 }
+
+/* =========================
+   Creative Projects Layout
+========================= */
+
+.project-layout {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 30px;
+  padding: 25px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.project-info h3 {
+  margin-bottom: 10px;
+}
+
+.project-info p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+/* Project image */
+.project-image {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+}
+
+.project-layout:hover .project-image {
+  transform: scale(1.02);
+}
+
+/* Video preview box */
+.project-video-preview {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  cursor: pointer;
+}
+
+.project-video-preview video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.6);
+  pointer-events: none; /* prevents playing */
+}
+
+/* Overlay */
+.video-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 1.1rem;
+  background: rgba(0,0,0,0.25);
+  transition: background 0.3s ease;
+}
+
+.video-overlay i {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.project-layout:hover .video-overlay {
+  background: rgba(0,0,0,0.4);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .project-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
