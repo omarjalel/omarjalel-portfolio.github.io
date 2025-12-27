@@ -772,3 +772,17 @@ footer p {
   position: relative;
   padding-bottom: 90px;
 }
+
+/* Contact section left alignment only */
+#contact .section-content { text-align: left; }
+#contact h2 { text-align: left; }
+#contact h2::after { left: 0; transform: none; }
+#contact p { justify-content: flex-start; }
+
+/* Mobile: center on small screens */
+@media (max-width: 768px) {
+    #contact .section-content { text-align: center; }
+    #contact h2 { text-align: center; }
+    #contact h2::after { left: 50%; transform: translateX(-50%); }
+    #contact p { justify-content: center; }
+}
