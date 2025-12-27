@@ -939,6 +939,7 @@ body.dark .certificate-logo {
 /* Back Side - CRITICAL FIX */
 .certificate-back {
   transform: rotateY(180deg) !important; /* ← CRITICAL: Back starts rotated */
+   z-index: 1;
 }
 
 .certificate-header {
