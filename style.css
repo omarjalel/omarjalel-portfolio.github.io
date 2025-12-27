@@ -606,29 +606,39 @@ body.dark .experience-logo {
 /* =========================
    TOOLS RIBBON
 ========================= */
+
+/* =========================
+   TOOLS RIBBON SCROLLING
+========================= */
 .tools-ribbon {
-  overflow-x: auto;        /* allow horizontal scrolling */
-  overflow-y: hidden;
+  overflow: hidden;
   padding: 10px 0;
   background: var(--card-bg);
   border-top: 1px solid var(--card-border);
   border-bottom: 1px solid var(--card-border);
   border-radius: 8px;
   margin-top: 15px;
+  position: relative;
 }
 
 .tools-track {
   display: flex;
-  gap: 20px;              /* spacing between logos */
-  padding: 0 10px;
-  min-width: max-content;  /* prevent wrapping */
+  gap: 20px;
   align-items: center;
+  min-width: max-content; /* prevent wrapping */
+  animation: scrollRibbon 15s linear infinite;
 }
 
+/* Duplicate for smooth loop */
+.tools-track::after {
+  content: "";
+  flex: 0 0 20px; /* spacing between loops */
+}
+
+/* Logos */
 .tools-track img {
-  height: 40px;           /* uniform logo size */
+  height: 40px;
   width: auto;
-  cursor: default;
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
@@ -637,19 +647,17 @@ body.dark .experience-logo {
   opacity: 1;
 }
 
-/* Optional: hide scrollbar for cleaner look */
-.tools-ribbon::-webkit-scrollbar {
-  height: 6px;
-}
-.tools-ribbon::-webkit-scrollbar-thumb {
-  background-color: var(--btn-bg);
-  border-radius: 3px;
-}
-.tools-ribbon::-webkit-scrollbar-track {
-  background: transparent;
+/* SCROLL ANIMATION */
+@keyframes scrollRibbon {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
-/* Responsive: smaller logos on mobile */
+/* Responsive for mobile */
 @media (max-width: 768px) {
   .tools-track img {
     height: 30px;
