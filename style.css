@@ -836,21 +836,18 @@ footer p {
   overflow: hidden;
 }
 
-/* Option A: Remove it completely */
-/* .certificate-card:hover .certificate-inner:not(.flipped) {
-  transform: rotateY(10deg) rotateX(5deg) scale(1.02);
-} */
-
-/* Option B: Make it more subtle */
+/* Hover effect when not flipped */
 .certificate-card:not(.flipped):hover .certificate-inner {
   transform: scale(1.02);
   transition: transform 0.3s ease;
 }
+
+/* Flip animation */
 .certificate-card.flipped .certificate-inner {
   transform: rotateY(180deg) !important;
 }
 
-/* Front & Back Sides - CRITICAL FIXES */
+/* Front & Back Sides */
 .certificate-front,
 .certificate-back {
   position: absolute !important;
@@ -865,7 +862,7 @@ footer p {
   top: 0;
   left: 0;
   -webkit-backface-visibility: hidden !important;
-  backface-visibility: hidden !important; /* Keep this for both */
+  backface-visibility: hidden !important;
 }
 
 /* Front Side */
@@ -936,10 +933,14 @@ body.dark .certificate-logo {
   background: linear-gradient(135deg, #00c6ff, #0072ff);
 }
 
-/* Back Side - CRITICAL FIX */
+/* Back Side - FIXED WITH BACKGROUND */
 .certificate-back {
-  transform: rotateY(180deg) !important; /* ← CRITICAL: Back starts rotated */
-   z-index: 1;
+  background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%) !important;
+  color: white !important;
+  transform: rotateY(180deg) !important;
+  z-index: 1;
+  text-align: left;
+  overflow-y: auto;
 }
 
 .certificate-header {
