@@ -99,3 +99,58 @@ const navLinks = document.querySelector('nav ul');
 hamburger.addEventListener('click', () => {
     navLinks.classList.toggle('show');
 });
+
+// =====================
+// Certificate Flip Cards
+// =====================
+document.addEventListener('DOMContentLoaded', function() {
+  const certificateCards = document.querySelectorAll('.certificate-card:not(.coming-soon)');
+  
+  certificateCards.forEach(card => {
+    const viewMoreBtn = card.querySelector('.view-more-btn');
+    const flipBackBtn = card.querySelector('.flip-back-btn');
+    const inner = card.querySelector('.certificate-inner');
+    
+    // Click to flip
+    viewMoreBtn.addEventListener('click', function(e) {
+      e.stopPropagation();
+      card.classList.add('flipped');
+    });
+    
+    flipBackBtn.addEventListener('click', function(e) {
+      e.stopPropagation();
+      card.classList.remove('flipped');
+    });
+    
+    // Click outside to flip back
+    document.addEventListener('click', function(e) {
+      if (!card.contains(e.target) && card.classList.contains('flipped')) {
+        card.classList.remove('flipped');
+      }
+    });
+    
+    // Hover effect
+    card.addEventListener('mouseenter', function() {
+      if (!this.classList.contains('flipped')) {
+        inner.style.transform = 'rotateY(10deg) rotateX(5deg) scale(1.02)';
+      }
+    });
+    
+    card.addEventListener('mouseleave', function() {
+      if (!this.classList.contains('flipped')) {
+        inner.style.transform = '';
+      }
+    });
+  });
+  
+  // Coming soon card animation
+  const comingSoonCard = document.querySelector('.coming-soon');
+  if (comingSoonCard) {
+    comingSoonCard.addEventListener('click', function() {
+      this.style.transform = 'scale(0.95)';
+      setTimeout(() => {
+        this.style.transform = '';
+      }, 200);
+    });
+  }
+});
