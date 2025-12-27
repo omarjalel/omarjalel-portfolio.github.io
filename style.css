@@ -788,7 +788,7 @@ footer p {
 }
 
 /* =========================
-   CERTIFICATIONS SECTION
+   CERTIFICATIONS SECTION - FIXED
 ========================= */
 #certifications {
   background: var(--card-bg);
@@ -817,10 +817,11 @@ footer p {
   margin-top: 30px;
 }
 
-/* Certificate Card */
+/* Certificate Card - CRITICAL FIXES */
 .certificate-card {
   height: 400px;
   perspective: 1000px;
+  cursor: pointer;
 }
 
 .certificate-inner {
@@ -829,34 +830,36 @@ footer p {
   height: 100%;
   text-align: center;
   transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  transform-style: preserve-3d;
+  transform-style: preserve-3d !important;
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
   overflow: hidden;
 }
 
-.certificate-card:hover .certificate-inner {
+.certificate-card:hover .certificate-inner:not(.flipped) {
   transform: rotateY(10deg) rotateX(5deg) scale(1.02);
 }
 
 .certificate-card.flipped .certificate-inner {
-  transform: rotateY(180deg);
+  transform: rotateY(180deg) !important;
 }
 
-/* Front & Back Sides */
+/* Front & Back Sides - CRITICAL FIXES */
 .certificate-front,
 .certificate-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
+  position: absolute !important;
+  width: 100% !important;
+  height: 100% !important;
+  -webkit-backface-visibility: hidden !important;
+  backface-visibility: hidden !important;
   border-radius: 15px;
   padding: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  top: 0;
+  left: 0;
 }
 
 /* Front Side */
@@ -864,6 +867,7 @@ footer p {
   background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
   color: var(--text-color);
   border: 2px solid rgba(0, 198, 255, 0.1);
+  z-index: 2;
 }
 
 body.dark .certificate-front {
@@ -916,6 +920,8 @@ body.dark .certificate-logo {
   gap: 10px;
   transition: all 0.3s ease;
   box-shadow: 0 5px 15px rgba(0, 198, 255, 0.3);
+  z-index: 10;
+  position: relative;
 }
 
 .view-more-btn:hover {
@@ -924,13 +930,14 @@ body.dark .certificate-logo {
   background: linear-gradient(135deg, #00c6ff, #0072ff);
 }
 
-/* Back Side */
+/* Back Side - CRITICAL FIX */
 .certificate-back {
   background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
   color: white;
-  transform: rotateY(180deg);
+  transform: rotateY(180deg) !important;
   text-align: left;
   overflow-y: auto;
+  z-index: 1;
 }
 
 .certificate-header {
