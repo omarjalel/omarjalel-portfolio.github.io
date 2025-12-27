@@ -137,13 +137,6 @@ function initCertificateCards() {
       }
     });
     
-    // 3. Click outside the flipped card to close it
-    document.addEventListener('click', function(e) {
-      if (!card.contains(e.target) && card.classList.contains('flipped')) {
-        card.classList.remove('flipped');
-      }
-    });
-    
     // 4. Remove the hover effect that conflicts with the flip animation
     // We'll handle hover purely with CSS later
     
