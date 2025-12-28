@@ -962,17 +962,31 @@ body.dark .certificate-logo {
 /* Header - Compact */
 .certificate-header {
   text-align: center;
-  margin-bottom: 15px;
+  margin-bottom: 25px; /* Increased from 15px for larger logo */
   flex-shrink: 0;
 }
 
 .back-logo {
-  width: 50px;
-  height: 50px;
-  margin-bottom: 10px;
-  background: white;
+  width: 120px; /* Match front logo size */
+  height: 120px; /* Match front logo size */
   border-radius: 50%;
-  padding: 8px;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px; /* Match front logo margin */
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1); /* Add same shadow */
+  align-self: center; /* Center it horizontally */
+}
+
+.back-logo img {
+  max-width: 80px; /* Match front logo image size */
+  max-height: 80px;
+}
+
+/* For dark mode consistency */
+body.dark .back-logo {
+  background: #2a2a2a; /* Match dark mode style */
 }
 
 .certificate-header h3 {
