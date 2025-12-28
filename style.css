@@ -814,9 +814,11 @@ footer p {
 ========================= */
 .certifications-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Reduced from 380px */
   gap: 30px;
   justify-items: center;
+  max-width: 1300px; /* Increased container width */
+  margin: 0 auto; /* Center the grid */
 }
 
 /* =========================
@@ -825,9 +827,8 @@ footer p {
 .certificate-card {
   perspective: 1500px;
   width: 100%;
-  max-width: 420px;
+  max-width: 380px; /* Reduced from 420px */
   cursor: pointer;
-  /* REMOVE the fixed height from here */
 }
 
 .certificate-inner {
