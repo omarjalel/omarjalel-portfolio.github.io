@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Omar Jalel | Ingénieur en Automatisme Industrielle & IIoT</title>
+  <title>Omar Jalel | Ingénieur en Automatisme Industriel & IIoT</title>
 
   <!-- AOS Animation Library -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -19,209 +19,893 @@
 <nav>
   <div class="logo">Omar Jalel</div>
   <div class="hamburger">☰</div>
+
   <ul>
     <li><a href="#about">À propos</a></li>
     <li><a href="#experience">Expériences</a></li>
-    <li><a href="#projets-professionnelles">Projets Professionnelles</a></li>
+    <li><a href="#projets-professionnelles">Projets Professionnels</a></li>
     <li><a href="#education">Éducation</a></li>
     <li><a href="#skills">Compétences</a></li>
+    <li><a href="#certifications">Certifications</a></li>
+    <li><a href="#projets-creatifs">Projets Créatifs</a></li>
     <li><a href="#languages">Langues</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
+
   <button id="theme-toggle" class="theme-toggle">🌙</button>
 
-<div class="lang-switcher">
-  <a href="index.html" title="English"><img src="../flags/us.svg" alt="English" /></a>
-  <a href="index-fr.html" title="Français"><img src="../flags/fr.svg" alt="Français" /></a>
-</div>
-  
+  <!-- Language switcher -->
+  <div class="lang-switcher">
+    <a href="index.html" title="English"><img src="flags/us.svg" alt="English" /></a>
+    <a href="index-fr.html" title="Français"><img src="flags/fr.svg" alt="Français" /></a>
+  </div>
 </nav>
 
 <header class="hero">
   <div id="particles-js"></div>
   <div class="hero-content">
-            <!-- <img src="omar.jpeg" alt="Omar Jalel" class="hero-photo"> -->
-  <img src="../omar.jpeg" alt="Omar Jalel" class="profile-photo">
+    <img src="omar.jpeg" alt="Omar Jalel" class="profile-photo">
     <h1><span id="typed"></span></h1>
     <p>Siemens PLC | TIA Portal | WinCC | Industrie 4.0</p>
     <div class="cta">
-      <a href="FR/CV-OmarJalel-EUROPASS-FR.pdf" class="btn">Télécharger le CV</a>
-      <a href="#projects" class="btn outline">Voir les projets</a>
+      <a href="CV-OmarJalel-EUROPASS-FR.pdf" class="btn">Télécharger le CV</a>
+      <a href="#projets-creatifs" class="btn outline">Voir les Projets</a>
     </div>
   </div>
 </header>
 
 <section id="about" data-aos="fade-up">
-  <h2>À propos</h2>
+  <div class="section-content">
+  <h2>À propos de moi</h2>
   <p>
-    Ingénieur en automatisme industrielle travaillant actuellement chez Methode Electronics à Malte.
-    J'ai une expérience pratique en programmation de PLC Siemens, mise en service de machines,
+    Ingénieur en Automatisation Industrielle actuellement en poste chez Methode Electronics à Malte.
+    Je possède une expérience pratique en programmation de PLC Siemens, mise en service de machines,
     réseaux industriels et intégration IIoT.
   </p>
+    </div>
 </section>
 
 <section id="experience" data-aos="fade-up">
+  <div class="section-content">
   <h2>Expériences</h2>
 
-  <div class="card" data-aos="fade-up" data-aos-delay="100">
+  <div class="card experience-card" data-aos="fade-up" data-aos-delay="100">
+  <img src="logos/methode.png" alt="Methode Electronics" class="experience-logo">
     <h3>Methode Electronics – Malte</h3>
     <span>Ingénieur en Automatisation Industrielle (2024 – Présent)</span>
     <ul>
-      <li>Creation des schémas électriques et conception des armoires électriques</li>
-      <li>Câblage des armoires électriques : automates (PLC), capteurs, dispositifs d’urgence et de sécurité, MVK, IO-Link,
-IHM, variateurs de fréquence (VFD), electro-vannes</li>
-      <li>Programmation des PLC et des écrans HMI sous TIA Portal et WinCC</li>
-      <li>Collaboration avec les équipes transversales : ingénierie de production, maintenance, département IT</li>
-      <li>Fournir la formation nécessaire aux opérateurs et instructions techniques pour l’équipe de maintenance</li>
-      <li>Assurer que les systèmes d’automatisation respectent les normes de sécurité</li>
-      <li>Améliorer et mettre à jour les programmes existants pour réduire les temps d’arrêt et cycles de production</li>
+      <li>Conception et documentation des schémas électriques et armoires de contrôle pour nouvelles machines</li>
+      <li>Câblage d'armoires électriques : PLCs, Capteurs, Dispositifs d'urgence & Sécurité, MVK, IO Links, HMIs, VFDs, Vannes</li>
+      <li>Programmation PLC et Écrans HMI sous TIA Portal et WinCC</li>
+      <li>Collaboration avec équipes pluridisciplinaires incluant ingénierie de production, maintenance, département IT</li>
+      <li>Fournir la formation nécessaire pour les opérateurs et instructions techniques pour l'équipe de maintenance</li>
+      <li>Assurer la conformité des systèmes d'automatisation avec les normes de sécurité</li>
+      <li>Améliorer et mettre à jour les programmes d'automatisation existants pour réduire les temps d'arrêt et le temps de cycle de production</li>
       <li>Surveillance et dépannage en ligne des systèmes automatisés</li>
     </ul>
   </div>
 
-  <div class="card" data-aos="fade-up" data-aos-delay="200">
+<div class="card experience-card" data-aos="fade-up" data-aos-delay="200">
+  <img src="logos/discovery.png" alt="Discovery Informatique" class="experience-logo">
     <h3>Discovery Informatique SA – Tunisie</h3>
     <span>Consultant en Intégration Industrielle (2022 – 2024)</span>
     <ul>
-      <li>Étudier et démontrer les outils IIoT pour plusieurs clients industriels</li>
-      <li>Participer à l’étude des nouvelles technologies et à la documentation au sein du département R&D</li>
-      <li>Participer aux démonstrations, études et implémentations pour l’intégration MES</li>
-      <li>Identifier les points de communication IIoT : faisabilité, équipements, budget</li>
-      <li>Développer une passerelle de communication pour collecter les variables machines en temps réel via différents protocoles industriels</li>
-      <li>Améliorer la passerelle pour archiver les données et fonctionner en mode multi-nœuds</li>
+      <li>Étude et démonstration d'outils et technologies IIoT pour plusieurs clients industriels</li>
+      <li>Participation à l'étude de nouvelles technologies et documentation au sein du département R&D</li>
+      <li>Participation aux tâches de démos, études, implémentations pour intégration MES</li>
+      <li>Identification des points de communication IIoT : faisabilité, équipement, budget</li>
+      <li>Développement d'une passerelle de communication pour surveiller et collecter variables machines en temps réel via plusieurs protocoles industriels</li>
+      <li>Amélioration de la passerelle pour archiver données collectées et fonctionnement en mode multi-nœuds</li>
     </ul>
   </div>
 
-  <div class="card" data-aos="fade-up" data-aos-delay="200">
+  <div class="card experience-card" data-aos="fade-up" data-aos-delay="200">
+  <img src="logos/apbs.jpg" alt="APBS" class="experience-logo">
     <h3>APBS Avicenna Private Business Schools – Tunisie</h3>
     <span>Support IT et Maintenance (2021 – 2022)</span>
     <ul>
-      <li>Maintenir et ajuster le matériel informatique et électronique</li>
-      <li>Surveiller les sessions et conférences en ligne</li>
-      <li>Participer au câblage et à l’installation de matériel (caméras, écrans tactiles)</li>
-      <li>Développer une solution de mixage entre plusieurs caméras et sources audio</li>
+      <li>Maintenance et réglage d'équipements informatiques et électroniques</li>
+      <li>Surveillance de sessions et conférences en ligne</li>
+      <li>Participation au câblage et installation d'équipements (caméras, écrans tactiles)</li>
+      <li>Développement d'une solution de mixage de plusieurs caméras et sources audio</li>
     </ul>
   </div>
+    </div>
 </section>
 
 <section id="projets-professionnelles" data-aos="fade-up">
-  <h2>Projets Professionnelles</h2>
+  <div class="section-content">
+  <h2>Projets Professionnels</h2>
 
   <div class="card" data-aos="fade-up" data-aos-delay="300">
     <h3>Ligne de Production Automobile BMW</h3>
-    <p>Programmation et mise en service de machines simples et tables tournants utilisant Siemens S7-1500 PLCs et WinCC HMI</p>
+    <p>Programmation et mise en service de machines simples et tables tournantes utilisant Siemens S7-1500 PLCs et WinCC HMI.</p>
     <span>Siemens S7-1500 · TIA Portal · WinCC · PROFINET</span>
   </div>
 
   <div class="card" data-aos="fade-up" data-aos-delay="200">
     <h3>Système d'Inspection Visuelle (Robot + PLC)</h3>
-    <p>Développement d’un système d’inspection basé sur la vision avec une caméra Matrox et un robot 6 axes JAKA contrôlé via PLC Siemens.</p>
-    <span>Systèmes de vision · Robotique · PLC Siemens · PROFINET</span>
+    <p>Développement d'un système d'inspection basé sur la vision utilisant une caméra Matrox et un robot 6 axes JAKA contrôlé via Siemens PLC.</p>
+    <span>Systèmes de Vision · Robotique · PLC Siemens · PROFINET</span>
   </div>
 
   <div class="card" data-aos="fade-up" data-aos-delay="300">
     <h3>Passerelle Industrielle IIoT</h3>
-    <p>Passerelle d’acquisition de données machines en temps réel conçue pour l’intégration MES, supportant le multi-nœuds et l’archivage des données.</p>
+    <p>Passerelle d'acquisition de données machines en temps réel conçue pour intégration MES, supportant le fonctionnement multi-nœuds et l'archivage des données.</p>
     <span>OPC UA · Modbus TCP · MQTT · Apache Kafka · Docker</span>
   </div>
+    </div>
 </section>
 
 <section id="education" data-aos="fade-up">
+  <div class="section-content">
   <h2>Éducation</h2>
 
   <div class="card">
     <h4>Master Professionnel en Commande des Systèmes Industriels</h4>
     <p>Université de Carthage - ISSAT Mateur [ 15 Sep 2019 – 15 Juin 2021 ]</p>
-    <p>Ville : Bizerte | Pays : Tunisie | <a href="https://ucar.rnu.tn/" target="_blank">Site Web</a> | Niveau : EQF 7</p>
+    <p>Ville: Bizerte | Pays: Tunisie | <a href="https://ucar.rnu.tn/" target="_blank">Site Web</a> | Niveau: EQF 7</p>
   </div>
 
   <div class="card">
-    <h4>Licence Appliquée en Automatisme et Systèmes Industriels</h4>
+    <h4>Licence Appliquée en Automatisation des Systèmes Industriels (Bachelor)</h4>
     <p>Université de Carthage - ISSAT Mateur [ 15 Sep 2016 – 15 Juin 2019 ]</p>
-    <p>Ville : Bizerte | Pays : Tunisie | <a href="https://ucar.rnu.tn/" target="_blank">Site Web</a> | Niveau : EQF 6</p>
+    <p>Ville: Bizerte | Pays: Tunisie | <a href="https://ucar.rnu.tn/" target="_blank">Site Web</a> | Niveau: EQF 6</p>
   </div>
+    </div>
 </section>
 
 <section id="skills" data-aos="fade-up">
+  <div class="section-content">
   <h2>Compétences</h2>
-  <div class="grid">
-    <div>
-      <h4>Automatisation Industrielle</h4>
-      <div class="skill-bar"><div class="skill-fill" data-width="90%"></div></div>
-      <p>Câblage électrique, Siemens S7-300/1200/1500, Sécurité, Servo Drives, VFDs, TIA Portal, WinCC</p>
-    </div>
-    <div>
-      <h4>IIoT & Communication</h4>
-      <div class="skill-bar"><div class="skill-fill" data-width="85%"></div></div>
-      <p>OPC UA, Modbus TCP/RTU, PROFINET IO, MQTT, Apache Kafka, Intégration MES</p>
-    </div>
-    <div>
-      <h4>DevOps & Logiciels</h4>
-      <div class="skill-bar"><div class="skill-fill" data-width="75%"></div></div>
-      <p>Docker, Linux, Git, Node-RED, SQL, PostgreSQL, MySQL, Azure</p>
-    </div>
-    <div>
-      <h4>Outils & Embedded</h4>
-      <div class="skill-bar"><div class="skill-fill" data-width="60%"></div></div>
-      <p>Factory I/O, LabVIEW, MATLAB, Simulink, Fluidsim, PROTEUS, Raspberry Pi, Arduino, STM32 CubeMX</p>
-    </div>
-    <div>
-
-        <h4>Langages & Automatisation</h4>
-      <div class="skill-bar"><div class="skill-fill" data-width="70%"></div></div>
+  <div class="grid"> <div> 
+    <h4>Automatisation Industrielle</h4> 
+    <div class="skill-bar"><div class="skill-fill" data-width="90%"></div>
+    </div> <p>Câblage Électrique, Siemens S7-300/1200/1500, Sécurité, Servo Drives, VFDs, TIA Portal, WinCC</p> 
+  </div> <div> <h4>IIoT & Communication</h4> <div class="skill-bar"><div class="skill-fill" data-width="85%"></div></div> 
+    <p>OPC UA, Modbus TCP/RTU, PROFINET IO, MQTT, Apache Kafka, Intégration MES</p> 
+  </div> <div>
+    <h4>DevOps & Logiciels</h4> 
+    <div class="skill-bar"><div class="skill-fill" data-width="75%"></div>
+    </div> <p>Docker, Linux, Git, Node-RED, SQL, PostgreSQL, MySQL, Azure</p> </div> 
+    <div> <h4>Outils & Embarqué</h4> <div class="skill-bar"><div class="skill-fill" data-width="60%"></div>
+    </div> <p>Factory I/O, LabVIEW, MATLAB, Simulink, Fluidsim, PROTEUS, Raspberry Pi, Arduino, STM32 CubeMX</p> </div> 
+    <div> <h4>Programmation & Langages Automatisation</h4> <div class="skill-bar"><div class="skill-fill" data-width="70%"></div></div>
       <p>LADDER, SCL, STL, GRAPH, HTML, PHP, JAVA, C++</p>
-    </div>
+    </div> 
     <div>
-      <h4>Pack Microsoft</h4>
-      <div class="skill-bar"><div class="skill-fill" data-width="90%"></div></div>
-      <p>Microsoft Office, Excel, Word, PowerPoint</p>
+      <h4>Pack Microsoft</h4> 
+      <div class="skill-bar"><div class="skill-fill" data-width="90%"></div>
+      </div> <p>Microsoft Office, Excel, Word, PowerPoint</p> 
+    </div> 
+  </div>
     </div>
+</section>
+
+<!-- =========================
+     SECTION CERTIFICATIONS - CARROUSEL HORIZONTAL
+========================= -->
+<section id="certifications" data-aos="fade-up">
+  <div class="section-content">
+    <h2>Certifications & Qualifications</h2>
+    <p class="section-subtitle">
+      Certifications professionnelles validant mon expertise technique
+    </p>
+
+    <div class="certifications-carousel">
+      <!-- Flèche Gauche -->
+      <button class="carousel-arrow left" aria-label="Certificats précédents">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+      
+      <!-- Piste des Certificats -->
+      <div class="certificates-track">
+        
+        <!-- Certificat Siemens PLC Niveau 3 -->
+        <div class="certificate-card">
+          <div class="certificate-inner">
+            <!-- FACE AVANT -->
+            <div class="certificate-front">
+              <div class="certificate-logo">
+                <img src="logos/siemens.png" alt="Logo Siemens">
+              </div>
+              <h3>Certificat Siemens PLC Niveau 3</h3>
+              <button type="button" class="btn-cert view-more-btn">
+                <i class="fas fa-chevron-down"></i> Voir Détails
+              </button>
+            </div>
+            <!-- FACE ARRIÈRE -->
+            <div class="certificate-back">
+              <div class="certificate-back-content">
+                <div class="certificate-header">
+                  <div class="certificate-logo">
+                    <img src="logos/siemens.png" alt="Logo Siemens">
+                  </div>
+                  <h3>Certificat Siemens PLC Niveau 3</h3>
+                </div>
+                <div class="certificate-details">
+                  <div class="detail-item">
+                    <i class="fas fa-building"></i>
+                    <div>
+                      <strong>Émis par</strong>
+                      <p>HTL Automation – Service et Formation</p>
+                    </div>
+                  </div>
+                  <div class="detail-item">
+                    <i class="fas fa-calendar-alt"></i>
+                    <div>
+                      <strong>Émis le</strong>
+                      <p>Jan 2022</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="skills-list">
+                  <h4><i class="fas fa-cogs"></i> Compétences Couvertes</h4>
+                  <div class="skills-tags">
+                    <span>PLC Siemens</span><span>Concepts GSD</span><span>Communication Drive</span>
+                    <span>Encodeur Rotatif</span><span>VFDs</span><span>Scripts WinCC</span>
+                    <span>Normes Électriques</span><span>Diagnostic de Pannes</span><span>Diagnostic Réseau</span>
+                  </div>
+                </div>
+                <div class="certificate-actions">
+                  <a href="PLC-Siemens-Lev3-Certificate.jpg" class="btn-cert view-certificate-btn" target="_blank" rel="noopener">
+                    <i class="fas fa-eye"></i> Voir le Certificat
+                  </a>
+                </div>
+                <div class="certificate-footer">
+                  <div class="badge">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>Vérifié</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Certificat Siemens PLC Niveau 1&2 -->
+        <div class="certificate-card">
+          <div class="certificate-inner">
+            <!-- FACE AVANT -->
+            <div class="certificate-front">
+              <div class="certificate-logo">
+                <img src="logos/siemens.png" alt="Logo Siemens">
+              </div>
+              <h3>Certificat Siemens PLC Niveau 1&2</h3>
+              <button type="button" class="btn-cert view-more-btn">
+                <i class="fas fa-chevron-down"></i> Voir Détails
+              </button>
+            </div>
+            <!-- FACE ARRIÈRE -->
+            <div class="certificate-back">
+              <div class="certificate-back-content">
+                <div class="certificate-header">
+                  <div class="certificate-logo">
+                    <img src="logos/siemens.png" alt="Logo Siemens">
+                  </div>
+                  <h3>Certificat Siemens PLC Niveau 1&2</h3>
+                </div>
+                <div class="certificate-details">
+                  <div class="detail-item">
+                    <i class="fas fa-building"></i>
+                    <div>
+                      <strong>Émis par</strong>
+                      <p>HTL Automation – Service et Formation</p>
+                    </div>
+                  </div>
+                  <div class="detail-item">
+                    <i class="fas fa-calendar-alt"></i>
+                    <div>
+                      <strong>Émis le</strong>
+                      <p>Déc 2021</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="skills-list">
+                  <h4><i class="fas fa-cogs"></i> Compétences Couvertes</h4>
+                  <div class="skills-tags">
+                    <span>PLC Siemens</span><span>Profibus</span><span>Profinet</span>
+                    <span>Diagnostic PLC Siemens</span><span>E/S Analogiques</span><span>WinCC Basique/Avancé</span>
+                    <span>Contrôle PID</span><span>Encodeurs Incrémentaux/Absolus</span><span>PWM</span>
+                    <span>Traitement de Signal</span><span>Variateur G120C PN</span>
+                  </div>
+                </div>
+                <div class="certificate-actions">
+                  <a href="PLC-Siemens-Lev1&2-Certificate.jpg" class="btn-cert view-certificate-btn" target="_blank" rel="noopener">
+                    <i class="fas fa-eye"></i> Voir le Certificat
+                  </a>
+                </div>
+                <div class="certificate-footer">
+                  <div class="badge">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>Vérifié</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Microsoft Certified: Azure AI Fundamentals -->
+        <div class="certificate-card">
+          <div class="certificate-inner">
+            <!-- FACE AVANT -->
+            <div class="certificate-front">
+              <div class="certificate-logo">
+                <img src="logos/microsoft.png" alt="Logo Microsoft">
+              </div>
+              <h3>Microsoft Certified: Azure AI Fundamentals</h3>
+              <button type="button" class="btn-cert view-more-btn">
+                <i class="fas fa-chevron-down"></i> Voir Détails
+              </button>
+            </div>
+            <!-- FACE ARRIÈRE -->
+            <div class="certificate-back">
+              <div class="certificate-back-content">
+                <div class="certificate-header">
+                  <div class="certificate-logo">
+                    <img src="logos/microsoft.png" alt="Logo Microsoft">
+                  </div>
+                  <h3>Microsoft Certified: Azure AI Fundamentals</h3>
+                </div>
+                <div class="certificate-details">
+                  <div class="detail-item">
+                    <i class="fas fa-building"></i>
+                    <div>
+                      <strong>Émis par</strong>
+                      <p>Microsoft</p>
+                    </div>
+                  </div>
+                  <div class="detail-item">
+                    <i class="fas fa-calendar-alt"></i>
+                    <div>
+                      <strong>Émis le</strong>
+                      <p>Fév 2023</p>
+                    </div>
+                  </div>
+                  <div class="detail-item">
+                    <i class="fas fa-id-badge"></i>
+                    <div>
+                      <strong>ID du Certificat</strong>
+                      <p>AI-900</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="skills-list">
+                  <h4><i class="fas fa-cogs"></i> Compétences Couvertes</h4>
+                  <div class="skills-tags">
+                    <span>SQL</span><span>DevOps</span><span>Azure Bot Services</span>
+                    <span>Azure Machine Learning</span><span>Cognitive Services</span><span>Fondamentaux IA</span>
+                    <span>Services Azure AI</span><span>Concepts Machine Learning</span>
+                  </div>
+                </div>
+                <div class="certificate-actions">
+                  <a href="https://www.credly.com/badges/56d64f23-fac8-45f3-8823-0e5600b54f07" class="btn-cert view-certificate-btn" target="_blank" rel="noopener">
+                    <i class="fas fa-external-link-alt"></i> Vérifier le Badge
+                  </a>
+                </div>
+                <div class="certificate-footer">
+                  <div class="badge">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>Vérifié par Microsoft</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Microsoft Certified: Azure Fundamentals (AZ-900) -->
+        <div class="certificate-card">
+          <div class="certificate-inner">
+            <!-- FACE AVANT -->
+            <div class="certificate-front">
+              <div class="certificate-logo">
+                <img src="logos/microsoft.png" alt="Logo Microsoft">
+              </div>
+              <h3>Microsoft Certified: Azure Fundamentals</h3>
+              <button type="button" class="btn-cert view-more-btn">
+                <i class="fas fa-chevron-down"></i> Voir Détails
+              </button>
+            </div>
+            <!-- FACE ARRIÈRE -->
+            <div class="certificate-back">
+              <div class="certificate-back-content">
+                <div class="certificate-header">
+                  <div class="certificate-logo">
+                    <img src="logos/microsoft.png" alt="Logo Microsoft">
+                  </div>
+                  <h3>Microsoft Certified: Azure Fundamentals</h3>
+                </div>
+                <div class="certificate-details">
+                  <div class="detail-item">
+                    <i class="fas fa-building"></i>
+                    <div>
+                      <strong>Émis par</strong>
+                      <p>Microsoft</p>
+                    </div>
+                  </div>
+                  <div class="detail-item">
+                    <i class="fas fa-calendar-alt"></i>
+                    <div>
+                      <strong>Émis le</strong>
+                      <p>Jan 2023</p>
+                    </div>
+                  </div>
+                  <div class="detail-item">
+                    <i class="fas fa-id-badge"></i>
+                    <div>
+                      <strong>ID du Certificat</strong>
+                      <p>AZ-900</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="skills-list">
+                  <h4><i class="fas fa-cogs"></i> Compétences Couvertes</h4>
+                  <div class="skills-tags">
+                    <span>DevOps</span><span>Azure</span><span>Données Cloud</span>
+                    <span>Réseaux Cloud</span><span>Sécurité Cloud</span><span>Services Cloud</span>
+                    <span>Stockage Cloud</span><span>Virtualisation</span><span>Fondamentaux Azure</span>
+                    <span>Concepts Cloud</span><span>Services Azure</span><span>Tarification Azure</span>
+                  </div>
+                </div>
+                <div class="certificate-actions">
+                  <a href="https://www.credly.com/badges/dae5bc3d-4ac5-41b2-94e1-db24080a359b" class="btn-cert view-certificate-btn" target="_blank" rel="noopener">
+                    <i class="fas fa-external-link-alt"></i> Vérifier le Badge
+                  </a>
+                </div>
+                <div class="certificate-footer">
+                  <div class="badge">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>Vérifié par Microsoft</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Certificat HTML -->
+        <div class="certificate-card">
+          <div class="certificate-inner">
+            <!-- FACE AVANT -->
+            <div class="certificate-front">
+              <div class="certificate-logo">
+                <img src="logos/html.png" alt="Logo HTML">
+              </div>
+              <h3>Certificat HTML</h3>
+              <button type="button" class="btn-cert view-more-btn">
+                <i class="fas fa-chevron-down"></i> Voir Détails
+              </button>
+            </div>
+            <!-- FACE ARRIÈRE -->
+            <div class="certificate-back">
+              <div class="certificate-back-content">
+                <div class="certificate-header">
+                  <div class="certificate-logo">
+                    <img src="logos/html.png" alt="Logo HTML">
+                  </div>
+                  <h3>Certificat HTML</h3>
+                </div>
+                <div class="certificate-details">
+                  <div class="detail-item">
+                    <i class="fas fa-building"></i>
+                    <div>
+                      <strong>Émis par</strong>
+                      <p>Sololearn</p>
+                    </div>
+                  </div>
+                  <div class="detail-item">
+                    <i class="fas fa-calendar-alt"></i>
+                    <div>
+                      <strong>Émis le</strong>
+                      <p>Avr 2021</p>
+                    </div>
+                  </div>
+                  <div class="detail-item">
+                    <i class="fas fa-id-badge"></i>
+                    <div>
+                      <strong>ID du Certificat</strong>
+                      <p>#1014-21462707</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Pas de Section Compétences -->
+                <div class="certificate-actions">
+                  <a href="html.pdf" class="btn-cert view-certificate-btn" target="_blank" rel="noopener">
+                    <i class="fas fa-eye"></i> Voir le Certificat
+                  </a>
+                </div>
+                <div class="certificate-footer">
+                  <div class="badge">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>Vérifié</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Certificat PHP -->
+        <div class="certificate-card">
+          <div class="certificate-inner">
+            <!-- FACE AVANT -->
+            <div class="certificate-front">
+              <div class="certificate-logo">
+                <img src="logos/php.png" alt="Logo PHP">
+              </div>
+              <h3>Certificat PHP</h3>
+              <button type="button" class="btn-cert view-more-btn">
+                <i class="fas fa-chevron-down"></i> Voir Détails
+              </button>
+            </div>
+            <!-- FACE ARRIÈRE -->
+            <div class="certificate-back">
+              <div class="certificate-back-content">
+                <div class="certificate-header">
+                  <div class="certificate-logo">
+                    <img src="logos/php.png" alt="Logo PHP">
+                  </div>
+                  <h3>Certificat PHP</h3>
+                </div>
+                <div class="certificate-details">
+                  <div class="detail-item">
+                    <i class="fas fa-building"></i>
+                    <div>
+                      <strong>Émis par</strong>
+                      <p>Sololearn</p>
+                    </div>
+                  </div>
+                  <div class="detail-item">
+                    <i class="fas fa-calendar-alt"></i>
+                    <div>
+                      <strong>Émis le</strong>
+                      <p>Avr 2021</p>
+                    </div>
+                  </div>
+                  <div class="detail-item">
+                    <i class="fas fa-id-badge"></i>
+                    <div>
+                      <strong>ID du Certificat</strong>
+                      <p>#1059-21462707</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Pas de Section Compétences -->
+                <div class="certificate-actions">
+                  <a href="php.pdf" class="btn-cert view-certificate-btn" target="_blank" rel="noopener">
+                    <i class="fas fa-eye"></i> Voir le Certificat
+                  </a>
+                </div>
+                <div class="certificate-footer">
+                  <div class="badge">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>Vérifié</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- AJOUTEZ VOTRE 7ÈME CERTIFICAT ICI (SI NÉCESSAIRE) -->
+        <!-- COPIEZ ET COLLEZ LA STRUCTURE DE CARTE DE CERTIFICAT CI-DESSUS -->
+
+      </div>
+      
+      <!-- Flèche Droite -->
+      <button class="carousel-arrow right" aria-label="Certificats suivants">
+        <i class="fas fa-chevron-right"></i>
+      </button>
+    </div>
+  </div>
+</section>
+  
+<!-- =========================
+     PROJETS CRÉATIFS
+========================= -->
+<section id="projets-creatifs" data-aos="fade-up">
+  <div class="section-content">
+  <h2>Projets Créatifs</h2>
+
+  <div class="projects-grid" data-aos-delay="100">
+<a href="projects/siemens-opc-labview.html" target="_blank" class="creative-card project-layout">
+
+  <!-- CONTENU GAUCHE -->
+  <div class="project-info">
+    <h3>Assemblage Numérique Siemens S7-1500 & OPC UA</h3>
+    <p>
+      Intégration de PLC Siemens S7-1500 avec LabVIEW utilisant OPC UA pour
+      supervision en temps réel et simulation d'assemblage numérique.
+    </p>
+
+    <img
+      src="SiemensPLC-OPC-LabView.JPG"
+      alt="Projet Siemens PLC OPC UA LabVIEW"
+      class="project-image"
+    />
+    
+  </div>
+
+  <!-- APERÇU VIDÉO DROITE -->
+  <div class="project-video-preview">
+    <video muted preload="metadata" poster="SiemensPLC-OPC-LabView.JPG">
+      <source src="https://player.vimeo.com/video/1149498281?badge=0&autopause=0&player_id=0&app_id=58479">
+    </video>
+
+    <div class="video-overlay">
+      <i class="fas fa-play"></i>
+      <span>Voir la Démo</span>
+    </div>
+  </div>
+
+  <!-- RUBAN D'OUTILS - PLEINE LARGEUR -->
+  <div class="tools-ribbon">
+    <div class="tools-track">
+      <img src="logos/factoryio.png" alt="Factory IO" data-tooltip="Factory IO">
+      <img src="logos/labview.png" alt="LabVIEW" data-tooltip="LabVIEW">
+      <img src="logos/opc.png" alt="OPC UA" data-tooltip="OPC UA">
+      <img src="logos/s71500.png" alt="S7 1500 PLC" data-tooltip="S7 1500 PLC">
+      <img src="logos/siemens.png" alt="Siemens" data-tooltip="Siemens">
+      <img src="logos/tia-portal.png" alt="Tia Portal" data-tooltip="Tia Portal">
+      <!-- Dupliquer pour boucle fluide -->
+      <img src="logos/factoryio.png" alt="Factory IO" data-tooltip="Factory IO">
+      <img src="logos/labview.png" alt="LabVIEW" data-tooltip="LabVIEW">
+      <img src="logos/opc.png" alt="OPC UA" data-tooltip="OPC UA">
+      <img src="logos/s71500.png" alt="S7 1500 PLC" data-tooltip="S7 1500 PLC">
+      <img src="logos/siemens.png" alt="Siemens" data-tooltip="Siemens">
+      <img src="logos/tia-portal.png" alt="Tia Portal" data-tooltip="Tia Portal">
+    </div>
+  </div>
+
+</a>
+  </div>
+
+    <div class="projects-grid" data-aos-delay="200">
+<a href="projects/Azure-IOT-MQTT-Modbus.html" target="_blank" class="creative-card project-layout">
+
+  <!-- CONTENU GAUCHE -->
+  <div class="project-info">
+    <h3>Intégration de Données entre Azure Cloud, Broker MQTT et Modbus TCP</h3>
+    <p>
+      Intégration de données entre Azure Cloud (IoT Hub), broker MQTT et Modbus TCP 
+      utilisant Capteur DHT et Simulation PLC Siemens 
+    </p>
+
+    <img
+      src="Azure IOT-MQTT-Modbus.png"
+      alt="Azure-IOT-MQTT-Modbus"
+      class="project-image"
+    />
+  </div>
+
+  <!-- APERÇU VIDÉO DROITE -->
+  <div class="project-video-preview">
+    <video muted preload="metadata" poster="Azure IOT-MQTT-Modbus.png">
+      <source src="https://player.vimeo.com/video/1149505262?badge=0&autopause=0&player_id=0&app_id=58479">
+    </video>
+
+    <div class="video-overlay">
+      <i class="fas fa-play"></i>
+      <span>Voir la Démo</span>
+    </div>
+  </div>
+
+  <!-- RUBAN D'OUTILS - PLEINE LARGEUR -->
+  <div class="tools-ribbon">
+    <div class="tools-track">
+      <img src="logos/azure.png" alt="Azure Cloud" data-tooltip="Azure Cloud">
+      <img src="logos/azureiothub.png" alt="Azure IOT HUB" data-tooltip="Azure IOT HUB">
+      <img src="logos/c.png" alt="C#" data-tooltip="C#">
+      <img src="logos/s71500.png" alt="S7 1500 PLC" data-tooltip="S7 1500 PLC">
+      <img src="logos/siemens.png" alt="Siemens" data-tooltip="Siemens">
+      <img src="logos/tia-portal.png" alt="Tia Portal" data-tooltip="Tia Portal">
+      <img src="logos/esp32.png" alt="ESP32" data-tooltip="ESP32">
+      <img src="logos/modbus.png" alt="Modbus" data-tooltip="Modbus">
+      <img src="logos/mqtt.png" alt="Mosquitto MQTT" data-tooltip="Mosquitto MQTT">
+      <!-- Dupliquer pour boucle fluide -->
+      <img src="logos/azure.png" alt="Azure Cloud" data-tooltip="Azure Cloud">
+      <img src="logos/azureiothub.png" alt="Azure IOT HUB" data-tooltip="Azure IOT HUB">
+      <img src="logos/c.png" alt="C#" data-tooltip="C#">
+      <img src="logos/s71500.png" alt="S7 1500 PLC" data-tooltip="S7 1500 PLC">
+      <img src="logos/siemens.png" alt="Siemens" data-tooltip="Siemens">
+      <img src="logos/tia-portal.png" alt="Tia Portal" data-tooltip="Tia Portal">
+      <img src="logos/esp32.png" alt="ESP32" data-tooltip="ESP32">
+      <img src="logos/modbus.png" alt="Modbus" data-tooltip="Modbus">
+      <img src="logos/mqtt.png" alt="Mosquitto MQTT" data-tooltip="Mosquitto MQTT">
+    </div>
+  </div>
+
+</a>
+  </div>
+
+    <div class="projects-grid" data-aos-delay="300">
+<a href="projects/ROS-NODE-RED.html" target="_blank" class="creative-card project-layout">
+
+  <!-- CONTENU GAUCHE -->
+  <div class="project-info">
+    <h3>Simulation ROS sur VM Ubuntu (Azure VM) - Transfert de données vers NODE-RED</h3>
+    <p>
+Déployer un environnement de simulation Robot Operating System (ROS) sous Ubuntu OS avec 
+Gazebo et le package ROS-Noetic, le tout hébergé sur Microsoft Azure Cloud VM.
+    </p>
+
+    <img
+      src="ROS-NODE-RED.png"
+      alt="ROS-NODE-RED"
+      class="project-image"
+    />
+  </div>
+
+  <!-- APERÇU VIDÉO DROITE -->
+  <div class="project-video-preview">
+    <video muted preload="metadata" poster="ROS-NODE-RED.png">
+      <source src="https://www.youtube.com/embed/Punvpf2gWM4">
+    </video>
+
+    <div class="video-overlay">
+      <i class="fas fa-play"></i>
+      <span>Voir la Démo</span>
+    </div>
+  </div>
+
+  <!-- RUBAN D'OUTILS - PLEINE LARGEUR -->
+  <div class="tools-ribbon">
+    <div class="tools-track">
+      <img src="logos/azure.png" alt="Azure Cloud" data-tooltip="Azure Cloud">
+      <img src="logos/nodered.png" alt="Node RED" data-tooltip="Node RED">
+      <img src="logos/ros.png" alt="ROS" data-tooltip="ROS">
+      <img src="logos/ubuntu.png" alt="Ubuntu OS" data-tooltip="Ubuntu OS">
+      <img src="logos/mqtt.png" alt="Mosquitto MQTT" data-tooltip="Mosquitto MQTT">
+      <!-- Dupliquer pour boucle fluide -->
+      <img src="logos/azure.png" alt="Azure Cloud" data-tooltip="Azure Cloud">
+      <img src="logos/nodered.png" alt="Node RED" data-tooltip="Node RED">
+      <img src="logos/ros.png" alt="ROS" data-tooltip="ROS">
+      <img src="logos/ubuntu.png" alt="Ubuntu OS" data-tooltip="Ubuntu OS">
+      <img src="logos/mqtt.png" alt="Mosquitto MQTT" data-tooltip="Mosquitto MQTT">
+    </div>
+  </div>
+
+</a>
+  </div>
+
+    <div class="projects-grid" data-aos-delay="400">
+<a href="projects/ApacheStreamPipes-MQTT-Kafka.html" target="_blank" class="creative-card project-layout">
+
+  <!-- CONTENU GAUCHE -->
+  <div class="project-info">
+    <h3>Test Passerelle IIoT - Apache StreamPipes avec Broker Kafka</h3>
+    <p>
+Simulateur de véhicule fonctionnant sur Raspberry Pi utilisant un réseau CAN virtuel, diffusant des données de télémétrie via Apache StreamPipes et Kafka
+    </p>
+
+    <img
+      src="ApacheStreamPipes-MQTT-Kafka.png"
+      alt="ApacheStreamPipes-MQTT-Kafka"
+      class="project-image"
+    />
+  </div>
+
+  <!-- APERÇU VIDÉO DROITE -->
+  <div class="project-video-preview">
+    <video muted preload="metadata" poster="ApacheStreamPipes-MQTT-Kafka.png">
+      <source src="https://www.youtube.com/embed/ZQfke56F8ME?rel=0">
+    </video>
+
+    <div class="video-overlay">
+      <i class="fas fa-play"></i>
+      <span>Voir la Démo</span>
+    </div>
+  </div>
+
+  <!-- RUBAN D'OUTILS - PLEINE LARGEUR -->
+  <div class="tools-ribbon">
+    <div class="tools-track">
+      <img src="logos/kafka.png" alt="Apache Kafka" data-tooltip="Apache Kafka">
+      <img src="logos/raspberry.png" alt="Raspberry Pi" data-tooltip="Raspberry Pi">
+      <img src="logos/streampipes.png" alt="Apache Stream Pipes" data-tooltip="Apache Stream Pipes">
+      <img src="logos/mqtt.png" alt="Mosquitto MQTT" data-tooltip="Mosquitto MQTT">
+      <!-- Dupliquer pour boucle fluide -->
+      <img src="logos/kafka.png" alt="Apache Kafka" data-tooltip="Apache Kafka">
+      <img src="logos/raspberry.png" alt="Raspberry Pi" data-tooltip="Raspberry Pi">
+      <img src="logos/streampipes.png" alt="Apache Stream Pipes" data-tooltip="Apache Stream Pipes">
+      <img src="logos/mqtt.png" alt="Mosquitto MQTT" data-tooltip="Mosquitto MQTT">
+    </div>
+  </div>
+
+</a>
+  </div>
+
+    <div class="projects-grid" data-aos-delay="500">
+<a href="projects/FactoryIO-TiaPortal.html" target="_blank" class="creative-card project-layout">
+
+  <!-- CONTENU GAUCHE -->
+  <div class="project-info">
+    <h3>Simulation d'usine 3D virtuelle avec Factory IO et PLC Siemens</h3>
+    <img
+      src="FactoryIO-TiaPortal.png"
+      alt="FactoryIO-TiaPortal"
+      class="project-image"
+    />
+  </div>
+
+  <!-- APERÇU VIDÉO DROITE -->
+  <div class="project-video-preview">
+    <video muted preload="metadata" poster="FactoryIO-TiaPortal.png">
+      <source src="https://www.youtube.com/embed/yuV2FUVH7lU?rel=0">
+    </video>
+
+    <div class="video-overlay">
+      <i class="fas fa-play"></i>
+      <span>Voir la Démo</span>
+    </div>
+  </div>
+
+  <!-- RUBAN D'OUTILS - PLEINE LARGEUR -->
+  <div class="tools-ribbon">
+    <div class="tools-track">
+      <img src="logos/factoryio.png" alt="Factory IO" data-tooltip="Factory IO">
+      <img src="logos/opc.png" alt="OPC UA" data-tooltip="OPC UA">
+      <img src="logos/s71500.png" alt="S7 1500 PLC" data-tooltip="S7 1500 PLC">
+      <img src="logos/siemens.png" alt="Siemens" data-tooltip="Siemens">
+      <img src="logos/tia-portal.png" alt="Tia Portal" data-tooltip="Tia Portal">
+      <!-- Dupliquer pour boucle fluide -->
+      <img src="logos/factoryio.png" alt="Factory IO" data-tooltip="Factory IO">
+      <img src="logos/opc.png" alt="OPC UA" data-tooltip="OPC UA">
+      <img src="logos/s71500.png" alt="S7 1500 PLC" data-tooltip="S7 1500 PLC">
+      <img src="logos/siemens.png" alt="Siemens" data-tooltip="Siemens">
+      <img src="logos/tia-portal.png" alt="Tia Portal" data-tooltip="Tia Portal">
+    </div>
+  </div>
+
+</a>
+  </div>
   </div>
 </section>
 
 <section id="languages" data-aos="fade-up">
+  <div class="section-content">
   <h2>Langues</h2>
-
-  <div class="language-card">
-    <h4>Langue Maternelle</h4>
-    <p>Arabe</p>
+  <div class="language-card"> 
+    <h4>Langue Maternelle</h4> 
+    <p>Arabe</p> 
+  </div> 
+  <div class="language-card"> 
+    <h4>Anglais</h4> 
+    <div class="lang-bar"><span data-level="90%">Écoute : C1</span></div> 
+    <div class="lang-bar"><span data-level="80%">Lecture : B2</span></div> 
+    <div class="lang-bar"><span data-level="80%">Écriture : B1</span></div> 
+    <div class="lang-bar"><span data-level="80%">Expression Orale : B1</span></div>
+    <div class="lang-bar"><span data-level="80%">Interaction Orale : B2</span></div> 
+  </div>
+      <div class="language-card"> 
+    <h4>Français</h4> 
+    <div class="lang-bar"><span data-level="90%">Écoute : B2</span></div> 
+    <div class="lang-bar"><span data-level="90%">Lecture : C1</span></div> 
+    <div class="lang-bar"><span data-level="80%">Écriture : C1</span></div> 
+    <div class="lang-bar"><span data-level="70%">Expression Orale : B2</span></div>
+    <div class="lang-bar"><span data-level="70%">Interaction Orale : B2</span></div> 
+  </div> <p><strong>Niveaux :</strong> A1/A2 : Débutant | B1/B2 : Indépendant | C1/C2 : Compétent</p>
+    </div>
+  <div class="language-card"> 
+    <h4>Allemand</h4> 
+    <div class="lang-bar"><span data-level="10%">Écoute : A1</span></div> 
+    <div class="lang-bar"><span data-level="10%">Lecture : A1</span></div> 
+    <div class="lang-bar"><span data-level="20%">Écriture : A2</span></div> 
+    <div class="lang-bar"><span data-level="10%">Expression Orale : A1</span></div> 
+    <div class="lang-bar"><span data-level="20%">Interaction Orale : A2</span></div> 
   </div>
 
-  <div class="language-card">
-    <h4>Anglais</h4>
-    <div class="lang-bar"><span data-level="90%">Écoute : C1</span></div>
-    <div class="lang-bar"><span data-level="70%">Lecture : B2</span></div>
-    <div class="lang-bar"><span data-level="50%">Écriture : B1</span></div>
-    <div class="lang-bar"><span data-level="50%">Expression orale : B1</span></div>
-    <div class="lang-bar"><span data-level="70%">Interaction orale : B2</span></div>
-  </div>
-
-    <div class="language-card">
-    <h4>Français</h4>
-    <div class="lang-bar"><span data-level="70%">Écoute : B2</span></div>
-    <div class="lang-bar"><span data-level="90%">Lecture : C1</span></div>
-    <div class="lang-bar"><span data-level="90%">Écriture : C1</span></div>
-    <div class="lang-bar"><span data-level="70%">Expression orale : B2</span></div>
-    <div class="lang-bar"><span data-level="70%">Interaction orale : B2</span></div>
-  </div>
-
-  <div class="language-card">
-    <h4>Allemand</h4>
-    <div class="lang-bar"><span data-level="10%">Écoute : A1</span></div>
-    <div class="lang-bar"><span data-level="10%">Lecture : A1</span></div>
-    <div class="lang-bar"><span data-level="20%">Écriture : A2</span></div>
-    <div class="lang-bar"><span data-level="10%">Expression orale : A1</span></div>
-    <div class="lang-bar"><span data-level="20%">Interaction orale : A2</span></div>
-  </div>
-
-  <p><strong>Niveaux :</strong> A1/A2 : Débutant | B1/B2 : Intermédiaire | C1/C2 : Avancé</p>
 </section>
 
 <section id="contact" data-aos="fade-up">
+  <div class="section-content">
   <h2>Contact</h2>
   <p><i class="fas fa-envelope"></i><a href="mailto:omarjalelytt@gmail.com">omarjalelytt@gmail.com</a></p>
   <p><i class="fab fa-linkedin"></i><a href="https://www.linkedin.com/in/omar-jalel/" target="_blank">linkedin.com/in/omar-jalel</a></p>
   <p><i class="fas fa-map-marker-alt"></i>Malte</p>
+    </div>
 </section>
 
 <footer>
