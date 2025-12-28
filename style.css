@@ -894,13 +894,14 @@ body.dark .certificate-front {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 25px;
+  margin: 0 auto 25px; /* Center horizontally with auto margins */
   box-shadow: 0 10px 25px rgba(0,0,0,0.1);
 }
 
 body.dark .certificate-logo {
   background: #2a2a2a;
 }
+
 
 .certificate-logo img {
   max-width: 80px;
@@ -961,8 +962,10 @@ body.dark .certificate-logo {
 
 /* Header - Compact */
 .certificate-header {
-  text-align: center;
-  margin-bottom: 25px; /* Increased from 15px for larger logo */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* This centers all child elements */
+  margin-bottom: 25px;
   flex-shrink: 0;
 }
 
@@ -994,6 +997,7 @@ body.dark .back-logo {
   margin: 0;
   color: #00c6ff;
   line-height: 1.2;
+  text-align: center; /* Ensure text is centered */
 }
 
 /* Details box - Compact */
