@@ -788,12 +788,12 @@ footer p {
 }
 
 /* =========================
-   CERTIFICATIONS SECTION – IMPROVED FLIP CARD (NO SCROLL)
+   CERTIFICATIONS SECTION – AUTO-EXPANDING BACK CARD
 ========================= */
 
 #certifications {
   background: var(--card-bg);
-  border-<radius: 20px;
+  border-radius: 20px;
   margin: 40px auto;
 }
 
@@ -820,50 +820,56 @@ footer p {
 }
 
 /* =========================
-   CARD STRUCTURE (LARGER - NO SCROLL)
+   CARD STRUCTURE (CSS GRID APPROACH)
 ========================= */
 .certificate-card {
   perspective: 1500px;
   width: 100%;
   max-width: 420px;
-  height: 580px; /* Increased from min-height */
   cursor: pointer;
+  /* REMOVE the fixed height from here */
 }
 
 .certificate-inner {
   position: relative;
   width: 100%;
-  height: 100%;
   transform-style: preserve-3d;
   transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
   border-radius: 16px;
   box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+  
+  /* CSS GRID MAGIC: Single cell grid */
+  display: grid;
+  grid-template-areas: "card";
+}
+
+.certificate-inner > * {
+  /* Both children occupy the same grid area */
+  grid-area: card;
 }
 
 .certificate-card.flipped .certificate-inner {
   transform: rotateY(180deg);
+  /* Optional: Slight scale effect for emphasis */
+  /* transform: rotateY(180deg) scale(1.02); */
 }
 
 /* =========================
-   FRONT & BACK (ABSOLUTE)
+   FRONT & BACK (GRID-BASED LAYOUT)
 ========================= */
 .certificate-front,
 .certificate-back {
-  position: absolute;
-  inset: 0;
   backface-visibility: hidden;
   border-radius: 16px;
   padding: 30px;
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 100%;
   box-sizing: border-box;
-  overflow: hidden; /* Prevent any overflow */
 }
 
 /* =========================
-   FRONT (IMPROVED)
+   FRONT (FIXED HEIGHT)
 ========================= */
 .certificate-front {
   background: linear-gradient(135deg, #ffffff, #f8f9fa);
@@ -871,6 +877,8 @@ footer p {
   align-items: center;
   text-align: center;
   justify-content: center;
+  height: 420px; /* FIXED HEIGHT */
+  transform: rotateY(0deg);
 }
 
 body.dark .certificate-front {
@@ -934,22 +942,21 @@ body.dark .certificate-logo {
 }
 
 /* =========================
-   BACK (DETAILS SIDE - FIXED TO SHOW ALL CONTENT)
+   BACK (AUTO-EXPANDING HEIGHT)
 ========================= */
 .certificate-back {
-  transform: rotateY(180deg);
   background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
   color: white;
-  display: flex;
-  flex-direction: column;
+  transform: rotateY(180deg);
+  min-height: 420px; /* Same as front when minimal */
+  height: auto; /* EXPANDS WITH CONTENT */
 }
 
 .certificate-back-content {
   display: flex;
   flex-direction: column;
   height: 100%;
-  flex: 1;
-  min-height: 0; /* Important for flex children */
+  min-height: 100%; /* Ensure it fills the container */
 }
 
 /* Header - Compact */
@@ -1014,13 +1021,12 @@ body.dark .certificate-logo {
   opacity: 0.9;
 }
 
-/* Skills - Fixed to show all */
+/* Skills - Natural flow */
 .skills-list {
   margin-bottom: 15px;
-  flex: 1; /* Take available space */
+  flex: 1;
   display: flex;
   flex-direction: column;
-  min-height: 150px; /* Minimum height for skills */
 }
 
 .skills-list h4 {
@@ -1038,10 +1044,7 @@ body.dark .certificate-logo {
   flex-wrap: wrap;
   gap: 6px;
   flex: 1;
-  align-content: flex-start; /* Align items at the start */
-  overflow: visible !important; /* Force visibility */
-  max-height: none !important; /* Remove max height limit */
-  padding-right: 0;
+  align-content: flex-start;
 }
 
 .skills-tags span {
@@ -1060,7 +1063,7 @@ body.dark .certificate-logo {
 .certificate-actions {
   width: 100%;
   flex-shrink: 0;
-  margin-top: 10px;
+  margin-top: auto; /* Pushes to bottom */
 }
 
 .view-certificate-btn {
@@ -1088,6 +1091,7 @@ body.dark .certificate-logo {
 .view-certificate-btn i {
   margin-right: 8px;
 }
+
 /* =========================
    FOOTER (VERIFIED BADGE ONLY)
 ========================= */
@@ -1115,20 +1119,73 @@ body.dark .certificate-logo {
   color: #00c6ff;
   font-size: 0.9rem;
 }
+
 /* =========================
    RESPONSIVE ADJUSTMENTS
 ========================= */
 @media (max-width: 768px) {
-  .skills-list {
-    min-height: 120px;
+  .certifications-grid {
+    grid-template-columns: 1fr;
   }
   
-  .skills-tags {
-    gap: 5px;
+  .certificate-card {
+    max-width: 100%;
+  }
+  
+  .certificate-front {
+    height: 380px; /* Slightly smaller on mobile */
+    padding: 25px;
+  }
+  
+  .certificate-back {
+    min-height: 380px;
+    padding: 25px;
+  }
+  
+  .certificate-front h3 {
+    font-size: 1.3rem;
+  }
+  
+  .certificate-logo {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+  }
+  
+  .certificate-logo img {
+    max-width: 70px;
+    max-height: 70px;
+  }
+  
+  .view-more-btn {
+    padding: 12px 28px;
+    font-size: 0.95rem;
+    min-width: 160px;
+  }
+  
+  .certificate-header h3 {
+    font-size: 1.2rem;
   }
   
   .skills-tags span {
     font-size: 0.75rem;
     padding: 4px 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .certificate-front {
+    height: 360px;
+    padding: 20px;
+  }
+  
+  .certificate-back {
+    min-height: 360px;
+    padding: 20px;
+  }
+  
+  .certificate-front h3 {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
   }
 }
