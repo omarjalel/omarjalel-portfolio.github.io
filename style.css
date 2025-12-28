@@ -815,12 +815,23 @@ footer p {
 /* =========================
    CAROUSEL CONTAINER
 ========================= */
-.certifications-carousel {
-  position: relative;
-  min-height: 500px; /* Adjust based on your card height */
-  width: 100%;
-  padding: 0 60px; /* Space for arrows */
-  margin: 0 auto;
+.carousel-arrow {
+  position: absolute;
+  top: calc(50% - 210px); /* Half of card height (420px/2) */
+  width: 50px;
+  height: 50px;
+  background: var(--btn-bg);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
 .certificates-track {
@@ -1161,7 +1172,7 @@ body.dark .certificate-logo {
 
 .carousel-arrow:hover {
   background: #00b4e6;
-  transform: translateY(-50%) scale(1.1);
+  transform: scale(1.1);
   box-shadow: 0 8px 20px rgba(0,198,255,0.3);
 }
 
@@ -1176,7 +1187,7 @@ body.dark .certificate-logo {
 .carousel-arrow:disabled {
   background: #ccc;
   cursor: not-allowed;
-  transform: translateY(-50%);
+  transform: none;
   box-shadow: none;
 }
 
