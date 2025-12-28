@@ -817,6 +817,7 @@ footer p {
 ========================= */
 .certifications-carousel {
   position: relative;
+  min-height: 500px; /* Adjust based on your card height */
   width: 100%;
   padding: 0 60px; /* Space for arrows */
   margin: 0 auto;
